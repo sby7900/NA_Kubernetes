@@ -1,6 +1,6 @@
 #### 1.环境初始化
 ##### 1.1 检查操作系统的版本
-- 此方式下安装kubernetes集群要求Centos版本要在7.5或之上
+- 此方式下安装kubernetes集群使用的版本是Rocky Linux release 8.5
 ```
 [root@kube-master ~]# cat /etc/redhat-release
 Rocky Linux release 8.5 (Green Obsidian)
