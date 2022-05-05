@@ -231,7 +231,7 @@ kind: Namespace
 metadata:
   name: dev
 
----
+\*---\*
 
 apiVersion: v1
 kind: Pod
