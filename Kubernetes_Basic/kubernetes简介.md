@@ -1,4 +1,5 @@
 ---
+
 #### 1.1应用部署方式演变
 - 在部署应用程序的方式上，主要经历了三个时代：
 
@@ -88,16 +89,19 @@
 
 #### 1.6 资源管理方式
 - 命令式对象管理：直接使用命令去操作kubernetes资源
+
 ```
 kubectl run nginx-pod --image=nginx:1.17.1 --port=80
 ```
 
 - 命令式对象配置：通过命令配置和配置文件去操作kubernetes资源
+
 ```
 kubectl create/patch -f nginx-pod.yaml
 ```
 
 - 声明式对象配置：通过apply命令和配置文件去操作kubernetes资源
+
 ```
 kubectl apply -f nginx-pod.yaml
 ```
@@ -111,6 +115,7 @@ kubectl apply -f nginx-pod.yaml
 ##### 1.6.1 命令式对象管理
 - **kubectl命令**
   - kubectl是kubernetes集群的命令行工具，通过它能够对集群本身进行管理，并能够在集群上进行容器化应用的安装部署。kubectl命令的语法如下：
+
 ```
 kubectl [command] [type] [name] [flags]
 ```
@@ -135,6 +140,7 @@ kubectl get pod pod_name -o yaml
 
 - **资源类型**
   - kubernetes中所有的内容都抽象为资源，可以通过下面的命令进行查看:
+
 ```
 kubectl api-resources
 ```
@@ -163,9 +169,11 @@ kubectl api-resources
 
 - **操作**
   - kubernetes允许对资源进行多种操作，可以通过--help查看详细的操作命令
+  
   ```
   kubectl --help
   ```
+  
   - 经常使用的操作有下面这些：
 
 | 命令分类   | 命令         | 翻译                        | 命令作用                     |
@@ -192,6 +200,7 @@ kubectl api-resources
 |            | version      | 版本                        | 显示当前Server和Client的版本 |
 
   - 下面以一个namespace / pod的创建和删除简单演示下命令的使用：
+  
   ```
   # 创建一个namespace
   [root@master ~]# kubectl create namespace dev
