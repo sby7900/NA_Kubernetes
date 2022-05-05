@@ -55,4 +55,5 @@
 | kube-node1   | 192.168.107.153 | containerd，kubectl，kubeadm，kubelet |
 | kube-node2   | 192.168.107.154 | containerd，kubectl，kubeadm，kubelet |
 
+ 1
  
